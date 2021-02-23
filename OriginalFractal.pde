@@ -1,12 +1,11 @@
 public void setup()
 {
   size(500,500);
-  background(0);
-  myFractal(250, 250, 550);
 }
 public void draw()
 {
-  
+  background(0);
+  myFractal(250, 250, 550);
 }
 public void myFractal(double x, double y, double siz) 
 {
@@ -34,8 +33,4 @@ public int distance()
     return 5;
   }
   return dist;
-}
-public void mousePressed()
-{
-   myFractal(250, 250, 550);
 }
