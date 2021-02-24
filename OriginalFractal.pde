@@ -13,7 +13,7 @@ public void myFractal(double x, double y, double siz)
 {
   ellipse((int)x, (int)y, (int)siz, (int)siz);
   if (siz > 10) {
-    myFractal(x + (Math.cos(getAngle())), y+(Math.sin(getAngle())), siz-(100/distance()));
+    myFractal(x + 10, y + 10, siz-(100/distance()));
   }
 }
 public double getAngle() 
