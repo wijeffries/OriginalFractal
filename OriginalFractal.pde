@@ -27,11 +27,11 @@ public double getAngle()
 }
 public int distance()
 {
-  int dist = (int)(dist(250, 250, mouseX, mouseY)/7);
-  if (dist < 5) {
+  int dst = (int)(dist(250, 250, mouseX, mouseY)/7);
+  if (dst < 5) {
     return 5;
   }
-  return dist;
+  return dst;
 }
 public void mousePressed()
 {
