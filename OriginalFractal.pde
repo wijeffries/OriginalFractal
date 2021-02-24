@@ -2,6 +2,7 @@ public void setup()
 {
   size(500,500);
   background(0);
+  stroke(0);
   myFractal(250, 250, 550);
 }
 public void draw()
@@ -12,7 +13,7 @@ public void myFractal(double x, double y, double siz)
 {
   ellipse((int)x, (int)y, (int)siz, (int)siz);
   if (siz > 10) {
-    myFractal(x + (Math.cos(getAngle())), y+(Math.sin(getAngle())), siz-(75/distance()));
+    myFractal(x + (Math.cos(getAngle())), y+(Math.sin(getAngle())), siz-(100/distance()));
   }
 }
 public double getAngle() 
