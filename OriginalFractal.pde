@@ -1,15 +1,15 @@
 public void setup()
 {
   size(500,500);
-}
-public void draw()
-{
   background(0);
   myFractal(250, 250, 550);
 }
+public void draw()
+{
+  
+}
 public void myFractal(double x, double y, double siz) 
 {
-  stroke(0);
   ellipse((int)x, (int)y, (int)siz, (int)siz);
   if (siz > 10) {
     myFractal(x + (Math.cos(getAngle())), y+(Math.sin(getAngle())), siz-(200/distance()));
@@ -33,4 +33,8 @@ public int distance()
     return 5;
   }
   return dist;
+}
+public void mousePressed()
+{
+   myFractal(250, 250, 550);
 }
